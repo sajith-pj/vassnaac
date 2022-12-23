@@ -1,0 +1,35 @@
+.faq{
+    .edit-faq{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        span{
+            cursor: pointer;
+            font-size: 12px;
+            color: #012970;
+            text-decoration: underline;
+        }
+    }
+    .faq-attaches{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        a{
+            font-size: 14px;
+
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+}
+
+.view_p{
+    text-align: right;
+    color: blue;
+    font-size: 13px;
+}

@@ -1,0 +1,15 @@
+$width: 768px;
+$width2: 415px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
+
+@mixin small_mobile {
+    @media (max-width: #{$width2}){
+        @content
+    }
+}
+

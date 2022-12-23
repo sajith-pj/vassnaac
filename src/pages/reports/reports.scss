@@ -1,0 +1,62 @@
+@import "../../global.scss";
+
+.reports {
+    .criterion {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+
+        @include small_mobile {
+            display: none;
+        }
+
+        .criterion-btn {
+            border: none;
+            background: none;
+            color: #174a84;
+            font-weight: 600;
+            margin-right: 10px;
+            margin-top: 10px;
+
+            &.active {
+                border-bottom: 2px solid #174a84;
+            }
+        }
+    }
+
+    .criterion-mobile {
+        display: none;
+
+        @media only screen and (max-width: 415px) {
+            display: block;
+        }
+
+        .criterion-select {
+            max-width: 320px;
+        }
+    }
+
+    .naac-table {
+        border-collapse: separate;
+        border-spacing: 0 8px;
+        width: 100%;
+    
+        tr {
+            background: #ecf0f8;
+            color: #174a84;
+            // cursor: pointer;
+            transition: all .5s ease-in;
+    
+            // &:hover {
+            //     background: #cccccd;
+            // }
+    
+            td {
+                padding: 10px;
+                text-align: left;
+                white-space: nowrap;
+            }
+        }
+    }
+}

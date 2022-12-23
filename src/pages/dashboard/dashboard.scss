@@ -1,0 +1,135 @@
+@import "../../global.scss";
+
+.dash-box {
+    border-radius: 20px;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+
+    .count {
+        align-items: center;
+        background: hsla(0, 0%, 100%, .137);
+        border-radius: 15px;
+        color: #fff;
+        display: flex;
+        font-weight: 700;
+        height: 70px;
+        justify-content: center;
+        padding: 10px;
+        width: 70px;
+    }
+
+    p {
+        color: #fff;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+    }
+}
+
+.first {
+    background-color: rgb(77, 76, 166);
+}
+
+.second {
+    background-color: rgb(88, 143, 183);
+}
+
+.third {
+    background-color: rgb(185, 86, 92);
+}
+
+.fourth {
+    background-color: rgb(76, 166, 107);
+}
+
+.fifth {
+    background-color: rgb(223, 130, 63);
+}
+
+.sixth {
+    background-color: rgb(168, 135, 239);
+}
+
+.main-div {
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    p {
+        color: #174a84;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+    }
+
+    .girl_icon {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+}
+
+.notice-div {
+    width: 100%;
+    min-height: 250px;
+    overflow-y: auto;
+    height: 250px;
+    
+    .notice-item {
+        width: 100%;
+        background-color: #f3f4f6;
+        padding: 3px 5px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition: all .5s ease-in;
+        
+        &:hover{
+            background-color: #cccccd;
+        }
+        .notice-title{
+            color: #174a84;
+            font-weight: 600;
+        }
+        .notice-message{
+            color: black;
+            font-size: 13px;
+        }
+    }
+}
+
+.h2-dash {
+    color: #d4565d;
+    font-weight: 600;
+}
+
+
+.dashboard-criterion-cards{
+    margin-top:10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    &:hover{
+        scale:1.1;
+    }
+    .dashboard-summary-body{
+    margin-top: 0.5rem;
+    p{
+        margin-bottom: 0.2rem!important;
+        font-size: 13px;
+    }
+}
+}

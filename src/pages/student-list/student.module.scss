@@ -1,0 +1,20 @@
+
+.file-label{
+    width: 100%;
+    border: 1px solid #01579B;
+    padding: 5px 15px;
+    border-radius: 7px;
+    font-size: 12px;
+    background: #01579B;
+    font-weight: bold;
+    color: #fff;
+    cursor : pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.file{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}

@@ -1,0 +1,32 @@
+// agreement page
+.agreement{
+    margin: auto;
+    max-width: 1300px;
+    padding: 10px 20px;
+    
+    span{
+        cursor: pointer;
+        color: #4154f1;
+    }
+}
+
+///gray loader css
+.gray-loader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    pointer-events: none;
+    color: white;
+    font-size: 600;
+    font-size: 25px;
+}
+
+.report-image{
+    max-width: 600px;
+    margin: 10px;
+}

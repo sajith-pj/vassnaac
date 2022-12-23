@@ -1,0 +1,146 @@
+@import "../../global.scss";
+
+.criterion {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+
+    @include small_mobile {
+        display: none;
+    }
+
+    .criterion-btn {
+        border: none;
+        background: none;
+        color: #174a84;
+        font-weight: 600;
+        margin-right: 10px;
+        margin-top: 10px;
+
+        &.active {
+            border-bottom: 2px solid #174a84;
+        }
+    }
+}
+
+.criterion-mobile {
+    display: none;
+
+    @media only screen and (max-width: 415px) {
+        display: block;
+    }
+
+    .criterion-select {
+        max-width: 320px;
+    }
+}
+
+.naac-table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    width: 100%;
+
+    tr {
+        background: #ecf0f8;
+        color: #174a84;
+        cursor: pointer;
+        transition: all .5s ease-in;
+
+        &:hover {
+            background: #cccccd;
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+            white-space: nowrap;
+        }
+    }
+}
+
+.creteria-head {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+
+    @include small_mobile {
+        display: none;
+    }
+
+    .creteria-head-box {
+        border: 1px solid #174a84;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: .2px;
+        padding: 6px 24px;
+        background: none;
+        margin-right: 5px;
+        margin-top: 2px;
+
+        &.active {
+            background-color: #0a41ab;
+            color: white;
+        }
+    }
+}
+
+.enable-for {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #0a41ab;
+    border-radius: 5px;
+
+    .enable-for-head {
+        color: #0a41ab;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.crt-btn {
+    border: none;
+    background: none;
+    color: #0a41ab;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 5px 15px;
+    transition: .5s all ease-in;
+    border-radius: 5px;
+
+    &:hover {
+        background: rgb(201, 198, 198);
+    }
+}
+
+.crt-club {
+    height: 350px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.all-criterions {
+    .head {
+        color: #0a41ab;
+        font-weight: 600;
+    }
+    p{
+        font-size: 14px;
+    }
+    .thead-criterion-all{
+        th {
+            padding: 10px;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+    }
+}
+
+.criterion-add-details{
+    .optional_fields-label::first-letter{
+        text-transform: uppercase;
+    }
+}
